@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSL Certificate Verification Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SSL Certificate Verification Tool</h1>
+        <p>Please use this tool responsibly. Verifying SSL certificates from public websites is legal, but avoid unauthorized access, intrusive scanning, or abuse of this tool.</p>
+        <div class="disclaimer">
+            <p>Always ensure you have permission when checking the SSL certificate for a domain you do not own.</p>
+        </div>
+        <div class="form-container">
+            <label for="domain">Enter Domain:</label>
+            <input type="text" id="domain" placeholder="example.com">
+            <button onclick="verifySSL()">Check SSL Certificate</button>
+        </div>
+        <div id="output">
+            <pre id="message"></pre>
+            <pre id="fingerprint"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

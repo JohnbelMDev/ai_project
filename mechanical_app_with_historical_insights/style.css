@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#app {
+  text-align: center;
+}
+
+#viewer {
+  width: 600px;
+  height: 400px;
+  border: 2px solid #333;
+  margin: 20px auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#calculation-section {
+  margin-top: 20px;
+}
+
+#calculation-section input {
+  width: 100px;
+  margin: 0 5px;
+}

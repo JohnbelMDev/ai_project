@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Secure Cipher Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Secure Cipher Tool</h1>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+        <div class="controls">
+            <label for="cipherSelect">Cipher:</label>
+            <select id="cipherSelect">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+                <option value="xor">XOR Cipher</option>
+                <option value="hybrid">Hybrid Caesar-Vigenère Cipher</option>
+                <option value="aes">AES (128-bit) Encryption</option>
+                <option value="rsa">RSA Encryption</option>
+                <option value="sha256">SHA-256 Hashing</option>
+                <option value="reverse">Reverse Cipher</option>
+                <option value="base64">Base64 Encoding</option>
+                <option value="otp">One-Time Pad (OTP)</option>
+            </select>
+            <input type="text" id="keyInput" placeholder="Enter key (if needed)">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+        </div>
+        <textarea id="outputText" readonly placeholder="Result..."></textarea>
+        <h3>Analytics:</h3>
+        <div id="analyticsOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

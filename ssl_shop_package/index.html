@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSL Certificates Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SSL Certificates Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Secure Your Website Today</h2>
+        <p>Buy SSL Certificates with strong encryption to protect your site and users.</p>
+        <button onclick="scrollToProducts()">See Our Products</button>
+    </section>
+
+    <section id="products">
+        <h3>Our SSL Certificates</h3>
+        <div class="product-list">
+            <div class="product-card">
+                <h4>Domain Validation (DV)</h4>
+                <p>Simple and affordable SSL certificate for small websites.</p>
+                <span>$50/year</span>
+                <button onclick="addToCart('Domain Validation')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h4>Organization Validation (OV)</h4>
+                <p>SSL certificate for medium businesses with company verification.</p>
+                <span>$150/year</span>
+                <button onclick="addToCart('Organization Validation')">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <h4>Extended Validation (EV)</h4>
+                <p>High assurance SSL certificate for maximum trust and security.</p>
+                <span>$500/year</span>
+                <button onclick="addToCart('Extended Validation')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SSL Certificates Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

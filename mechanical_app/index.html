@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Mechanical Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>3D Mechanical Viewer with Calculations</h1>
+    <div id="viewer"></div>
+    <button id="rotate">Rotate Part</button>
+
+    <!-- Calculation Section -->
+    <div id="calculation-section">
+      <h2>Mechanical Calculation</h2>
+      <label for="input-force">Force (N):</label>
+      <input type="number" id="input-force" placeholder="Enter force">
+      
+      <label for="input-distance">Distance (m):</label>
+      <input type="number" id="input-distance" placeholder="Enter distance">
+      
+      <button id="calculate-torque">Calculate Torque</button>
+      <p id="output-result">Torque: <span id="torque-result">0</span> Nm</p>
+    </div>
+  </div>
+
+  <!-- jQuery and Three.js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
