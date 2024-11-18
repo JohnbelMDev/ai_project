@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Promise</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <!--Main Navigation-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo " id="navbar">
+      <h1 id="h1">Promise</h1>
+
+      <!-- <a class="navbar-brand right" href="#"><strong>Navbar</strong></a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <a href="/login"><button class="btn btn-outline-danger my-2 my-sm-0 margin left">Login</button></a>
+          <a href="/signup"> <button class="btn btn-outline-primary my-2 my-sm-0 margin left">Signup</button></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div>
+  <h2>The Promise application aims to provide leadership and technology support to places like Haiti.</h2>
+  <hr>
+</div>
+  <div class="container">
+    <div class="jumbotron text-center test">
+
+
+
+      <div class="row">
+
+        <% for(var i=0; i<answer.length;i++) {%>
+          <div class="col-md-4">
+            <div class="card" style="width: 19rem;">
+              <img srcset="<%=answer[i].imgPath%>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><%=answer[i].title%></h5>
+                <h5 class="card-title"></h5>
+                <p class="card-text black">Category: <%=answer[i].category%> </p>
+                <p class="card-text black"><%=answer[i].name%> is organizing this fundraiser</p>
+                <p class="card-text black">Email <%=answer[i].user%> for more info</p>
+                <p class="card-text black">Help <%=answer[i].name%> Raise $<%=answer[i].amount%></p>
+                <p class="card-text black"><%=answer[i].date%></p>
+                <!-- <p class="card-text"><%=answer[i].description%></p>
+                <p class="card-text"><%=answer[i].description%></p> -->
+                <a href="/viewdonation/<%=answer[i]._id%> " id="Margin" class="btn btn-outline-danger space">View Campaign</a>
+                <a href="/donationForm/<%=answer[i]._id%>" id="Margin" class="btn btn-outline-primary space">Donate</a>
+              </div>
+            </div>
+          </div>
+          <%}%>
+        </div>
+        <!-- <p>Login or Signup:</p> -->
+        <!-- <a href="/login" class="btn btn-default test2"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default test2"><span class="fa fa-user"></span>Signup</a> -->
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4 ">
+      <!-- Footer Text -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">About Us</h5>
+            <p>Promise is aimed to focus on providing support for reducing poverty</p>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <!-- Grid column -->
+          <div class="col-md-6 mb-md-0 mb-3">
+            <!-- Content -->
+            <h5 class="text-uppercase font-weight-bold">Contact Information</h5>
+            <ul>
+              <li> Malden, MA</li>
+              <li>JohnbelDev@gmail.com</li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Text -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Promise
+        <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+      </div>
+      <!-- Copyright -->
+      <div id="google_translate_element"></div>
+      <script type="text/javascript" >
+
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer>
+    <!-- Footer -->
+    <script type="text/javascript" src="/indexScroll.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+  </html>
