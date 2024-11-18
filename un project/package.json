@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "export-from-json": "^1.7.4"
+  }
+}

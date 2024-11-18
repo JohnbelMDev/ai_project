@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Law and Mechanics Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section id="colonial-law">
+            <h2>Exclusion in Colonial Law</h2>
+            <p>Enter race and social class to check eligibility for land ownership:</p>
+            <input id="race" placeholder="Race (e.g., Indigenous)" />
+            <input id="social-class" placeholder="Social Class (e.g., Lower)" />
+            <button onclick="checkLandOwnership()">Check Ownership</button>
+            <p id="result"></p>
+        </section>
+
+        <section id="fraud-detection">
+            <h2>Dress-Based Fraud Detection</h2>
+            <p>Analyze dress elements for fraudulent patterns:</p>
+            <input id="dress-elements" placeholder="Enter dress elements" />
+            <button onclick="detectFraud()">Analyze</button>
+            <p id="fraud-result"></p>
+        </section>
+
+        <section id="mechanical-app">
+            <h2>Global Mechanical App</h2>
+            <p>Calculate force based on mass and acceleration:</p>
+            <input id="mass" placeholder="Mass" type="number" />
+            <input id="acceleration" placeholder="Acceleration" type="number" />
+            <select id="unit-system">
+                <option value="metric">Metric</option>
+                <option value="imperial">Imperial</option>
+            </select>
+            <button onclick="calculateForce()">Calculate Force</button>
+            <p id="force-result"></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
